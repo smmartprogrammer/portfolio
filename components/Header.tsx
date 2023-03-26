@@ -24,12 +24,12 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://youtube.com/@partabparmar5537"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://youtube.com/@partabparmar5537"
           fgColor="gray"
           bgColor="transparent"
         />
