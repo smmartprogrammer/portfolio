@@ -2,6 +2,9 @@ import Head from "next/head";
 import type { NextPage } from "next";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import About from "../../components/About";
+import WorkExperience from "../../components/WorkExperience";
+import Skills from "../../components/Skills";
 
 const Home: NextPage = () => {
   return (
@@ -10,17 +13,22 @@ const Home: NextPage = () => {
         <title>Partab Portfolio</title>
       </Head>
       <Header />
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
+      <section id="hero" className="snap-center">
+      <About />      </section>
+      <section id="experience" className="snap-center">
+      <WorkExperience />      </section>
+      <section id="skills" className="snap-center">
+      <Skills />      </section>
 
-      {/* <Hero />
-<About />
 
-<Experience />
-<Skills />
-<Project /> 
-<Contact Me /> */}
+
+
+
+{/* <Project /> 
+<Contact Me />  */} */}
     </div>
   );
 };
