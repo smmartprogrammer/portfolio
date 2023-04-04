@@ -5,7 +5,7 @@ type Props = {}
 const projects =  [1,2,3,4,5]
 function Projects({}: Props) {
   return (
-    <motion.div
+    <motion.div 
     initial={{
          opacity:0,
     }}
