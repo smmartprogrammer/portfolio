@@ -16,8 +16,9 @@ function ContactMe({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto.partabrajp@gmail.com?subject=${formData.subject}& body=Hi, my name is ${formData.name}.${formData.message} (${formData.email})` 
-  }
+    window.location.href = `mailto:partabrajp@gmail.com?subject=${formData.subject}&body=Hi, my name is
+     ${formData.name}. ${formData.message} (${formData.email})`;
+  };
 
   return (
     <motion.div
@@ -27,15 +28,15 @@ function ContactMe({}: Props) {
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-screen flex relative flex-col text-center md:text-left  overflow-hidden  md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center z-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Contact me
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl text-center font-semibold">
+        <h4 className="text-4xl font-semibold text-center">
           I have got just what you need. {""}{" "}
-          <span className="underline decoration-[#f7ab0a]">Lets Talk</span>
+          <span className=" decoration-[#f7ab0a]/50 underline">Lets Talk</span>
         </h4>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
